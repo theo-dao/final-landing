@@ -1,0 +1,325 @@
+html{
+  font-family: 'Open Sans Condensed';
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+/*********NAVBAR*********/
+.navbar{
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  height: 70px;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  font-size: 16pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 1s all;
+}
+.opacity{
+  opacity: 0.8;
+}
+.logo{
+  height: 60px;
+  margin-left: 10%;
+}
+.logo img{
+  height: 60px;
+  margin-top: 5px;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  justify-content: space-between;
+  margin-left: 2%;
+}
+.navbar ul li a{
+  color: #B2B2B2;
+  transition: 0.5s all;
+}
+.navbar ul li a:hover{
+  color: #FFFFFF;
+}
+.dlButton{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  width: 150px;
+  height: 40px;
+  background: #FFFFFF;
+  position: absolute;
+  right: 25%;
+  margin-top: 12px;
+}
+.dlButton a{
+  color: #000000;
+}
+.dlButton:hover{
+  background: #B2B2B2;
+  transition: 0.5s all;
+}
+.account{
+  position: absolute;
+  right: 10%;
+  top: 15px;
+  color: #B2B2B2;
+}
+.account img{
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+  height: 30px;
+}
+.account a{
+  color: #B2B2B2;
+}
+.account a:hover{
+  transition: 0.5s all;
+  color: #FFFFFF;
+}
+/************************/
+/*********SLIDER*********/
+#slider {
+  position: relative;
+  overflow: hidden;
+  top: -90px;
+  margin: 0 auto 0 auto;
+  border-radius: 4px;
+}
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  list-style: none;
+}
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 800px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 55%;
+  z-index: 999;
+  display: block;
+  padding: 10px 10px;
+  width: auto;
+  height: auto;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 36px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+/*************************/
+/***********MAIN**********/
+main{
+  width: 1640px;
+  margin: 0 auto;
+  position: relative;
+  top: -150px;
+}
+.sliderBottomBlocks{
+  display: flex;
+  justify-content: space-between;
+}
+div[class*="Presentation"]{
+  width: 530px;
+  height: 350px;
+  border: 1px solid #B2B2B2;
+  border-top: 10px solid #000000;
+  background: #FFFFFF;
+}
+div[class*="Presentation"] h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25pt;
+}
+div[class*="Presentation"] p{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 52pt;
+  position: relative;
+  top: -65px;
+}
+div[class*="Presentation"] a{
+  color: white;
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  background: #000000;
+  text-align: center;
+  font-size: 24pt;
+  position: relative;
+  top: -120px;
+  transition: 0.3s all;
+}
+div[class*="Presentation"] a:hover{
+  opacity: 0.8;
+}
+article{
+  height: 890px;
+  width: 100%;
+}
+article:not(:first-child){
+  margin-top: 3%;
+}
+article h1{
+  font-size: 26pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 5%;
+}
+article p{
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 16pt;
+}
+.gamePresentation .img{
+  width: 33%;
+  height: 90%;
+  float: right;
+  margin-left: 20px;
+  background: url('../images/1.jpg');
+  background-position: center;
+}
+.gameplayPresentation .img{
+  width: 33%;
+  height: 90%;
+  float: left;
+  margin-right: 20px;
+  background: url('../images/2.jpg');
+  background-position: center;
+}
+.download{
+  height: 500px;
+}
+.download table{
+  width: 100%;
+  font-size: 16pt;
+  text-align: center;
+  background: #DDDDDD;
+  height: 300px;
+}
+.download table caption{
+  font-size: 18pt;
+  font-weight: bold;
+}
+.download table .border{
+  border-left: 1px solid black;
+}
+.download table td ul{
+  list-style: none;
+  position: relative;
+  left:-20px;
+}
+.download table td ul li{
+  margin-bottom: 10px;
+}
+.downloadLink{
+  position: relative;
+  top: 30px;
+  width: 300px;
+  height: 50px;
+  background: #000000;
+  transition: 1s all;
+  margin: 0 auto;
+  text-align: center;
+}
+.downloadLink:hover{
+  background: #B2B2B2;
+}
+.downloadLink a{
+  color: #FFFFFF;
+  font-size: 18pt;
+  position: relative;
+  top: 6px;
+}
+/****************************/
+/**********FOOTER************/
+footer{
+  height: 150px;
+  width: 100%;
+  font-size: 14pt;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+footer a{
+  color: #000000;
+}
+footer a:hover{
+  text-decoration: underline;
+  color: #B2B2B2;
+}
+footer ul{
+  list-style: none;
+  width: 200px;
+}
+.newsletter{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.newsletter input{
+  width:200px;
+}
+.social{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.social img{
+  width: 30px;
+  margin: 5px;
+}
+@media screen and (max-width: 1640px) {
+  main{
+    width: 1024px;
+  }
+  div[class*="Presentation"]{
+    width: 330px;
+    height: 265px;
+  }
+  div[class*="Presentation"] h2{
+    font-size: 20pt;
+  }
+  div[class*="Presentation"] p{
+    font-size: 42pt;
+  }
+  .navbar ul{
+    width: 300px;
+  }
+}
